@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     /** Flexbox para React Native usa flexbox por defecto y su direccion por defecto es vertical, es decir: flexDirection: column */
     container: {
         backgroundColor: 'cornflowerblue',
-        flex: 1
+        flex: 1                         //  Si el padre no se extiende los hijos tampoco
     },
     box1: {
         backgroundColor: 'navy',
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     },
     box4: {
         backgroundColor: 'teal',
-        flex: 1,
+        flex: 2,
         padding: 20
     },
 });
