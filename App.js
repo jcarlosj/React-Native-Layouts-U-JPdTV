@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
         backgroundColor: 'cornflowerblue',
         flex: 1,                         //  Si el padre no se extiende los hijos tampoco
         flexDirection: 'row',
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
+        alignItems: "center"            //  Por defecto trae 'stretch'
     },
     box1: {
         backgroundColor: 'navy',
