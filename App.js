@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     },
     box1: {
         backgroundColor: 'navy',
+        flex: 1,
         padding: 20
     },
     box2: {
@@ -31,10 +32,12 @@ const styles = StyleSheet.create({
     },
     box3: {
         backgroundColor: 'green',
+        flex: 1,
         padding: 20
     },
     box4: {
         backgroundColor: 'teal',
+        flex: 1,
         padding: 20
     },
 });
