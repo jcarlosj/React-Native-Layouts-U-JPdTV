@@ -27,22 +27,30 @@ const App = () => {
                     <Text style={ styles .title }>Qué hacer en París</Text>
                     <ScrollView horizontal={ true }>
                         {/* Se podría usar un View usando Flexbox pero ScrollView ya soluciona el problema */}
-                        <Image 
-                            style={ styles .city }
-                            source={ require( './src/assets/img/actividad1.jpg' ) }
-                        />
-                        <Image 
-                            style={ styles .city }
-                            source={ require( './src/assets/img/actividad2.jpg' ) }
-                        />
-                        <Image 
-                            style={ styles .city }
-                            source={ require( './src/assets/img/actividad3.jpg' ) }
-                        />
-                        <Image 
-                            style={ styles .city }
-                            source={ require( './src/assets/img/actividad4.jpg' ) }
-                        />
+                        <View>
+                            <Image 
+                                style={ styles .city }
+                                source={ require( './src/assets/img/actividad1.jpg' ) }
+                            />
+                        </View>
+                        <View>
+                            <Image 
+                                style={ styles .city }
+                                source={ require( './src/assets/img/actividad2.jpg' ) }
+                            />
+                        </View>
+                        <View>
+                            <Image 
+                                style={ styles .city }
+                                source={ require( './src/assets/img/actividad3.jpg' ) }
+                            />
+                        </View>
+                        <View>
+                            <Image 
+                                style={ styles .city }
+                                source={ require( './src/assets/img/actividad4.jpg' ) }
+                            />
+                        </View>
                         
                     </ScrollView>
 
