@@ -10,39 +10,66 @@ const logo = {
 const App = () => {
     return (
         <>
-            <View style={{ flexDirection: 'row' }}>        
-                <Image 
-                    style={ styles .banner }
-                    source={ require( './src/assets/img/bg.jpg' ) }
-                />
-            </View>
-                
-            <View style={ styles .container }>
-                <Text style={ styles .title }>Qué hacer en París</Text>
+            <ScrollView>
 
-                <ScrollView horizontal={ true }>
-                    {/* Se podría usar un View usando Flexbox pero ScrollView ya soluciona el problema */}
+                <View style={{ flexDirection: 'row' }}>        
                     <Image 
-                        style={ styles .city }
-                        source={ require( './src/assets/img/actividad1.jpg' ) }
+                        style={ styles .banner }
+                        source={ require( './src/assets/img/bg.jpg' ) }
                     />
-                    <Image 
-                        style={ styles .city }
-                        source={ require( './src/assets/img/actividad2.jpg' ) }
-                    />
-                    <Image 
-                        style={ styles .city }
-                        source={ require( './src/assets/img/actividad3.jpg' ) }
-                    />
-                    <Image 
-                        style={ styles .city }
-                        source={ require( './src/assets/img/actividad4.jpg' ) }
-                    />
+                </View>
                     
-                </ScrollView>
+                <View style={ styles .container }>
 
-            </View>
-            
+                    <Text style={ styles .title }>Qué hacer en París</Text>
+                    <ScrollView horizontal={ true }>
+                        {/* Se podría usar un View usando Flexbox pero ScrollView ya soluciona el problema */}
+                        <Image 
+                            style={ styles .city }
+                            source={ require( './src/assets/img/actividad1.jpg' ) }
+                        />
+                        <Image 
+                            style={ styles .city }
+                            source={ require( './src/assets/img/actividad2.jpg' ) }
+                        />
+                        <Image 
+                            style={ styles .city }
+                            source={ require( './src/assets/img/actividad3.jpg' ) }
+                        />
+                        <Image 
+                            style={ styles .city }
+                            source={ require( './src/assets/img/actividad4.jpg' ) }
+                        />
+                        
+                    </ScrollView>
+
+                    <Text style={ styles .title }>Los mejores alojamientos</Text>
+                    <View>
+
+                        <View>        
+                            <Image 
+                                style={ styles .best }
+                                source={ require( './src/assets/img/mejores1.jpg' ) }
+                            />
+                        </View>
+                        <View>        
+                            <Image 
+                                style={ styles .best }
+                                source={ require( './src/assets/img/mejores2.jpg' ) }
+                            />
+                        </View>
+                        <View>        
+                            <Image 
+                                style={ styles .best }
+                                source={ require( './src/assets/img/mejores3.jpg' ) }
+                            />
+                        </View>
+
+                    </View>
+
+                </View>
+                
+            </ScrollView>
         </>
     );
 };
@@ -65,6 +92,11 @@ const styles = StyleSheet.create({
         height: 300,
         marginRight: 10,
         width: 250, 
+    },
+    best: {
+        height: 180,
+        marginVertical: 5,
+        width: '100%'
     }
 });
 
